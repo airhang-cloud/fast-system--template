@@ -1,4 +1,4 @@
-import {createStore} from 'vuex'
+import { createStore } from "vuex";
 
 import user from "@/store/modules/user";
 import route from "@/store/modules/route";
@@ -12,6 +12,6 @@ export default createStore({
     // },
     modules: {
         user,
-        route
-    }
-})
+        route,
+    },
+});

@@ -1,85 +1,91 @@
 <template>
-  <div class="default-box">
-    <img class="bac-img animate__animated animate__pulse" src="@/assets/bac.png" alt="">
-    <a-form ref="loginForm" :model="form" class="login-box animate__animated animate__bounceIn" @submit="handleSubmit" auto-label-width>
-      <h1 style="text-align: center">EZ-Admin</h1>
-      <p class="tips">The simpler the better</p>
-      <a-form-item field="user"
-                   :rules="[{required:true,message:'用户名可使用admin'}]"
-                   :validate-trigger="['change','focus']" label="用户">
-        <a-input v-model="form.user" placeholder="用户输入..."/>
-      </a-form-item>
-      <a-form-item field="psw"
-                   :rules="[{required:true,message:'密码可使用6个6'},{minLength:6,message:'最小长度为6'}]"
-                   :validate-trigger="['change','focus']" label="密码">
-        <a-input v-model="form.psw" placeholder="密码输入..."/>
-      </a-form-item>
-      <a-form-item>
-        <a-button html-type="submit" type="primary" size="large">登录</a-button>
-        <a-button @click="$refs.loginForm.resetFields()" size="large">重置</a-button>
-      </a-form-item>
-    </a-form>
-  </div>
+    <div class="default-box">
+        <img class="bac-img animate__animated animate__pulse" src="@/assets/bac.png" alt="" />
+        <a-form ref="loginForm" :model="form" class="login-box animate__animated animate__bounceIn" @submit="handleSubmit" auto-label-width>
+            <h1 style="text-align: center">EZ-Admin</h1>
+            <p class="tips">The simpler the better</p>
+            <a-form-item field="user" :rules="[{ required: true, message: '用户名可使用admin' }]" :validate-trigger="['change', 'focus']" label="用户">
+                <a-input v-model="form.user" placeholder="用户输入..." />
+            </a-form-item>
+            <a-form-item
+                field="psw"
+                :rules="[
+                    { required: true, message: '密码可使用6个6' },
+                    { minLength: 6, message: '最小长度为6' },
+                ]"
+                :validate-trigger="['change', 'focus']"
+                label="密码"
+            >
+                <a-input v-model="form.psw" placeholder="密码输入..." />
+            </a-form-item>
+            <a-form-item>
+                <a-button html-type="submit" type="primary" size="large">登录</a-button>
+                <a-button @click="$refs.loginForm.resetFields()" size="large">重置</a-button>
+            </a-form-item>
+        </a-form>
+    </div>
 </template>
 
 <script>
 import router from "@/router";
-import {mapActions} from "vuex"
-import {Message} from "@arco-design/web-vue"
+import { mapActions } from "vuex";
+import { Message } from "@arco-design/web-vue";
 
 export default {
-  name: "LoginView",
-  data() {
-    return {
-      form: {
-        user: '',
-        psw: ''
-      }
-    }
-  },
-  methods: {
-    ...mapActions("user", ["handlerlogin"]),
-    validForm(form) {
-      let flag = []
-      for (let i in form) {
-        if (!form[i]) flag.push(false)
-        else flag.push(true)
-      }
-      return flag.every(el => {
-        return el
-      })
+    name: "LoginView",
+    data() {
+        return {
+            form: {
+                user: "",
+                psw: "",
+            },
+        };
     },
-    handleSubmit(value) {
-      if (this.validForm(this.form)) {
-        this.handlerlogin(this.form).then(res => {
-          const {login, msg} = res;
-          login && this.$message.success(msg) && router.push("/")
-        }).catch(err => {
-          // Message.error("请求超时")
-        })
-      } else return
-    }
-  }
-}
+    methods: {
+        ...mapActions("user", ["handlerlogin"]),
+        validForm(form) {
+            let flag = [];
+            for (let i in form) {
+                if (!form[i]) flag.push(false);
+                else flag.push(true);
+            }
+            return flag.every((el) => {
+                return el;
+            });
+        },
+        handleSubmit(value) {
+            if (this.validForm(this.form)) {
+                this.handlerlogin(this.form)
+                    .then((res) => {
+                        const { login, msg } = res;
+                        login && this.$message.success(msg) && router.push("/");
+                    })
+                    .catch((err) => {
+                        // Message.error("请求超时")
+                    });
+            } else return;
+        },
+    },
+};
 </script>
 <style scoped>
 .login-box {
-  max-width: 400px;
-  box-sizing: border-box;
-  padding: 80px 30px;
-  box-shadow: 0 0 6px #E0E0E0;
-  border-radius: 9px;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 80px 30px;
+    box-shadow: 0 0 6px #e0e0e0;
+    border-radius: 9px;
 }
 
 .tips {
-  color: #d8d8d8;
-  text-align: center;
-  margin-top: -9px;
+    color: #d8d8d8;
+    text-align: center;
+    margin-top: -9px;
 }
 
 @media (max-width: 1024px) {
-  .bac-img {
-    display: none;
-  }
+    .bac-img {
+        display: none;
+    }
 }
 </style>

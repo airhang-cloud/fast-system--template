@@ -1,87 +1,84 @@
 <template>
-  <a-menu
-      v-if="!item.meta.hide"
-      :default-open-keys="openKeysArr(targetArr)"
-      :selected-keys="targetArr"
-      :style="{ width: '100%' }"
-      @menuItemClick="onClickMenuItem"
-  >
-    <a-menu-item v-if="!checkNodes(item)" :key="item.path">
-      <component :is="item.meta.icon"/>
-      {{ item.meta.title }}
-    </a-menu-item>
-    <a-sub-menu v-else :key="item.path">
-      <template #title>
-        <span>
-          <component :is="item.meta.icon"/>
-          {{ item.meta.title }}
-        </span>
-      </template>
-      <Item v-for="ele in item.children" :item="ele" :parents="item"/>
-    </a-sub-menu>
-  </a-menu>
+    <a-menu v-if="!item.meta.hide" :default-open-keys="openKeysArr(targetArr)" :selected-keys="targetArr" :style="{ width: '100%' }" @menuItemClick="onClickMenuItem">
+        <a-menu-item v-if="!checkNodes(item)" :key="item.path">
+            <component :is="item.meta.icon" />
+            {{ item.meta.title }}
+        </a-menu-item>
+        <a-sub-menu v-else :key="item.path">
+            <template #title>
+                <span>
+                    <component :is="item.meta.icon" />
+                    {{ item.meta.title }}
+                </span>
+            </template>
+            <Item v-for="ele in item.children" :item="ele" :parents="item" />
+        </a-sub-menu>
+    </a-menu>
 </template>
 
 <script>
-import Item from "./NavItem.vue"
-import {computed, defineComponent, ref, watch} from "vue"
-import router, {routes} from "../../../router";
+import Item from "./NavItem.vue";
+import { computed, defineComponent, ref, watch } from "vue";
+import router, { routes } from "../../../router";
 
 export default defineComponent({
-  name: "index",
-  props: {
-    //节点元素
-    item: {
-      type: Object,
-      default: () => {
-        return {}
-      }
+    name: "index",
+    props: {
+        //节点元素
+        item: {
+            type: Object,
+            default: () => {
+                return {};
+            },
+        },
+        //选中元素
+        selectArr: {
+            type: Array,
+            default: () => {
+                return [];
+            },
+        },
     },
-    //选中元素
-    selectArr: {
-      type: Array,
-      default: () => {
-        return []
-      }
-    }
-  },
-  components: {Item},
-  setup(props, ctx) {
-    const collapsed = ref(false);
-    let targetArr = ref(props.selectArr)
-    watch(() => props.selectArr, (x, y) => {
-      console.log("选择菜单", x)
-      targetArr.value = x
-    })
-    const onCollapse = () => {
-      collapsed.value = !collapsed.value;
-    };
+    components: { Item },
+    setup(props, ctx) {
+        const collapsed = ref(false);
+        let targetArr = ref(props.selectArr);
+        watch(
+            () => props.selectArr,
+            (x, y) => {
+                console.log("选择菜单", x);
+                targetArr.value = x;
+            }
+        );
+        const onCollapse = () => {
+            collapsed.value = !collapsed.value;
+        };
 
-    function addPath(parents, node) {
-      return `${parents}/${node}`
-    }
+        function addPath(parents, node) {
+            return `${parents}/${node}`;
+        }
 
-    function checkNodes(el) {
-      return el.hasOwnProperty('children')
-    }
+        function checkNodes(el) {
+            return el.hasOwnProperty("children");
+        }
 
-    function openKeysArr(value){
-      return new Array(`/${value[0].split("/")[1]}`)
-    }
+        function openKeysArr(value) {
+            return new Array(`/${value[0].split("/")[1]}`);
+        }
 
-    return {
-      collapsed,
-      onCollapse,
-      onClickMenuItem(key) {
-        console.log(key)
-        ctx.emit("selectNode", {path: key})
-      },
-      addPath,
-      routes,
-      checkNodes,
-      targetArr,
-      openKeysArr
-    };
-  },
-})
+        return {
+            collapsed,
+            onCollapse,
+            onClickMenuItem(key) {
+                console.log(key);
+                ctx.emit("selectNode", { path: key });
+            },
+            addPath,
+            routes,
+            checkNodes,
+            targetArr,
+            openKeysArr,
+        };
+    },
+});
 </script>

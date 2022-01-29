@@ -2,9 +2,7 @@
 <template>
     <container-box>
         <a-typography :style="{ marginTop: '-40px' }">
-            <a-typography-title>
-                EZ-Admin
-            </a-typography-title>
+            <a-typography-title> EZ-Admin </a-typography-title>
             <a-typography-paragraph>
                 "EZ-Admin"顾名思义:这是一款简单的后台管理系统,作为一名业余前端人员,作者从代码上做了很大的简化,可以说只要你对前端有感兴趣,那么这个系统绝对是很快就能上手,目前版本主要面向新手,若大神偶然路过,欢迎指点
             </a-typography-paragraph>

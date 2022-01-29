@@ -1,13 +1,11 @@
 <template>
-  <h1>我的工程</h1>
+    <h1>我的工程</h1>
 </template>
 
 <script>
 export default {
-  name: "index"
-}
+    name: "index",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -5,7 +5,6 @@
 </template>
 <script setup>
 import { ref } from "vue";
-ggfdgdfg;
 
 let per = ref(sessionStorage.getItem("per"));
 let togglePer = ref(true);

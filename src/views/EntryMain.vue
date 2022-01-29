@@ -17,7 +17,7 @@
                 <header-tool />
             </a-layout-header>
             <!--内容内部-->
-            <a-layout style="padding: 0 24px;">
+            <a-layout style="padding: 0 24px">
                 <!--面包屑-->
                 <!--主试图盒子区域-->
                 <a-layout-content>

@@ -1,5 +1,3 @@
-import ContainerBox from "./ContainerBox/index.vue"
+import ContainerBox from "./ContainerBox/index.vue";
 
-export let install = [
-    ContainerBox
-]
+export let install = [ContainerBox];
