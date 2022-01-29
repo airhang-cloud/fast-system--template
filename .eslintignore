@@ -1,0 +1,6 @@
+/node_modules
+/dist
+/src/assets
+/package-lock.json
+.DS_Store
+vue.config.js
