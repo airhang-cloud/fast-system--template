@@ -3,13 +3,7 @@
         <router-view />
     </div>
 </template>
-<script setup>
-import { ref } from "vue";
-fvgsdgsgdfgdfgdfg;
-
-let per = ref(sessionStorage.getItem("per"));
-let togglePer = ref(true);
-</script>
+<script setup></script>
 <style lang="less">
 .right-flat {
     text-align: left;
