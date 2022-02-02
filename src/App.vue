@@ -21,7 +21,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    //background-color: #BDBDBD;
+    // background-color: #bdbdbd;
 }
 
 .default-box img {

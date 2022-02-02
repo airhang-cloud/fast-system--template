@@ -7,7 +7,7 @@
             <Nav v-for="el in routes[0].children" :key="el" :item="el" :select-arr="targetArr" @selectNode="onClickMenuItem" />
         </a-layout-sider>
         <!--内容外部-->
-        <a-layout>
+        <a-layout class="router-box">
             <!--内容头部-->
             <a-layout-header class="header-sty">
                 <a-button shape="round" @click="onCollapse">
@@ -17,11 +17,11 @@
                 <header-tool />
             </a-layout-header>
             <!--内容内部-->
-            <a-layout style="padding: 0 24px">
+            <a-layout>
                 <!--面包屑-->
                 <!--主试图盒子区域-->
                 <a-layout-content>
-                    <router-view class="animate__animated animate__fadeIn animate__faster" />
+                    <router-view class="animate__animated animate__fadeIn animate__faster content-box" />
                 </a-layout-content>
             </a-layout>
         </a-layout>
@@ -128,7 +128,7 @@ export default defineComponent({
     font-size: 16px;
     font-stretch: condensed;
     box-sizing: border-box;
-    padding: 22px 0;
+    /* padding: 22px 0; */
     /*text-align: center;*/
 }
 
@@ -137,5 +137,13 @@ export default defineComponent({
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.router-box {
+    overflow: hidden;
+}
+.content-box {
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 </style>
