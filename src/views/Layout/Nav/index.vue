@@ -11,15 +11,15 @@
                     {{ item.meta.title }}
                 </span>
             </template>
-            <Item v-for="ele in item.children" :item="ele" :parents="item" />
+            <Item v-for="ele in item.children" :item="ele" :key="ele" :parents="item" />
         </a-sub-menu>
     </a-menu>
 </template>
 
 <script>
 import Item from "./NavItem.vue";
-import { computed, defineComponent, ref, watch } from "vue";
-import router, { routes } from "../../../router";
+import { defineComponent, ref, watch } from "vue";
+import { routes } from "../../../router";
 
 export default defineComponent({
     name: "index",
@@ -45,6 +45,7 @@ export default defineComponent({
         let targetArr = ref(props.selectArr);
         watch(
             () => props.selectArr,
+            // eslint-disable-next-line no-unused-vars
             (x, y) => {
                 console.log("选择菜单", x);
                 targetArr.value = x;
@@ -59,7 +60,10 @@ export default defineComponent({
         }
 
         function checkNodes(el) {
-            return el.hasOwnProperty("children");
+            if (el.__proto__ === Object.prototype) {
+                // eslint-disable-next-line no-prototype-builtins
+                return el.hasOwnProperty("children");
+            }
         }
 
         function openKeysArr(value) {

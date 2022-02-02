@@ -4,7 +4,7 @@
         <a-layout-sider hide-trigger collapsible :collapsed="collapsed">
             <div class="logo" />
             <!--导航菜单-->
-            <Nav v-for="el in routes[0].children" :item="el" :select-arr="targetArr" @selectNode="onClickMenuItem" />
+            <Nav v-for="el in routes[0].children" :key="el" :item="el" :select-arr="targetArr" @selectNode="onClickMenuItem" />
         </a-layout-sider>
         <!--内容外部-->
         <a-layout>
@@ -31,20 +31,16 @@
 import router, { routes } from "@/router";
 import Nav from "./Layout/Nav";
 import HeaderTool from "./Layout/HeaderTool/index";
-import { defineComponent, ref, watch, reactive, computed } from "vue";
+import { defineComponent, ref } from "vue";
 import { useStore } from "vuex";
-import { Message } from "@arco-design/web-vue";
 import { setCurSelect, getCurSelect } from "@/utils";
-import { service } from "@/utils/request";
 import { onResize } from "@/utils/resize";
-import { IconCaretRight, IconCaretLeft, IconHome, IconCalendar } from "@arco-design/web-vue/es/icon";
+import { IconCaretRight, IconCaretLeft } from "@arco-design/web-vue/es/icon";
 
 export default defineComponent({
     components: {
         IconCaretRight,
         IconCaretLeft,
-        IconHome,
-        IconCalendar,
         Nav,
         HeaderTool,
     },

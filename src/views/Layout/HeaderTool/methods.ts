@@ -1,4 +1,3 @@
-import router from "@/router";
 import { clearConfig } from "@/utils";
 
 export function loginOut(cb: any) {

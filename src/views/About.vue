@@ -3,7 +3,5 @@
     <container-box />
 </template>
 <script>
-export default {
-    ga,
-};
+export default {};
 </script>

@@ -29,7 +29,6 @@
 <script>
 import router from "@/router";
 import { mapActions } from "vuex";
-import { Message } from "@arco-design/web-vue";
 
 export default {
     name: "LoginView",
@@ -53,6 +52,7 @@ export default {
                 return el;
             });
         },
+        // eslint-disable-next-line no-unused-vars
         handleSubmit(value) {
             if (this.validForm(this.form)) {
                 this.handlerlogin(this.form)
@@ -60,6 +60,7 @@ export default {
                         const { login, msg } = res;
                         login && this.$message.success(msg) && router.push("/");
                     })
+                    // eslint-disable-next-line no-unused-vars
                     .catch((err) => {
                         // Message.error("请求超时")
                     });

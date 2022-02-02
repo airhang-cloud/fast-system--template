@@ -1,9 +1,8 @@
-import { createRouter, createWebHistory, createWebHashHistory, RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/EntryMain.vue";
 import { getToken, setCurSelect } from "@/utils";
 import NProgress from "@/utils/progress";
 
-console.log(`%c 关注公众号:'部落单元阁'http://airhang.ltd`, "color:#d8d8d8;font-size:16px;");
 export const routes: Array<RouteRecordRaw> = [
     {
         path: "/",
@@ -143,7 +142,7 @@ router.beforeEach((from, to, next) => {
     }
     document.title = JSON.parse(JSON.stringify(tit));
 });
-router.afterEach((res) => {
+router.afterEach(() => {
     NProgress.done();
 });
 export default router;

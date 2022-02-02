@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { defineComponent, reactive } from "vue";
+import { defineComponent } from "vue";
 import { headerMenu } from "./data";
 import { loginOut } from "./methods";
 import { Modal } from "@arco-design/web-vue";
@@ -64,8 +64,6 @@ export default defineComponent({
                     break;
             }
         }
-
-        let DROP_MENU = reactive({});
         return {
             handlerLog,
             headerMenu,

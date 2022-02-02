@@ -16,7 +16,7 @@ export default defineComponent({
             },
         },
     },
-    setup(props, ctx) {
+    setup() {
         function addPath(node, parents) {
             return `${parents}/${node}`;
         }
