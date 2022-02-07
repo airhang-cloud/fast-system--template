@@ -3,7 +3,13 @@
     <container-box title="权限控制" subtitle="切换角色">
         <!-- 当前角色 -->
         <a-typography :style="{ marginTop: '-40px' }">
-            <a-typography-title>当前身份: {{ user }} <a-button type="primary">切换角色</a-button></a-typography-title>
+            <a-typography-title
+                >当前身份: {{ identity }}
+                <a-switch type="round" v-model="value" checked-value="yes" unchecked-value="no">
+                    <template #checked>开启管理员模式</template>
+                    <template #unchecked>关闭管理员切换为普通</template>
+                </a-switch></a-typography-title
+            >
             <a-typography-paragraph>浏览器存储: Cookie、LocalStorage、SessionStorage、IndexedDB、WebSql</a-typography-paragraph>
             <a-typography-paragraph>
                 <ul>
@@ -26,7 +32,15 @@ import { mapState } from "vuex";
 export default {
     name: "RoleSetting",
     computed: {
-        ...mapState("user", ["user"]),
+        ...mapState("user", ["identity"]),
+    },
+    data() {
+        return {
+            value: "yes",
+        };
+    },
+    methods: {
+        handlerToggleRole() {},
     },
 };
 </script>

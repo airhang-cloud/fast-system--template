@@ -34,6 +34,14 @@ export function getCurUser(): string {
     return localStorage.getItem("ez-admin-nav-user") || "EZ-Admin";
 }
 
+export function setCurIdentity(identity: string) {
+    localStorage.setItem("ez-admin-nav-identity", identity);
+}
+
+export function getCurIdentity(): string {
+    return localStorage.getItem("ez-admin-nav-identity") || "admin";
+}
+
 export function clearConfig() {
     localStorage.clear();
     sessionStorage.clear();

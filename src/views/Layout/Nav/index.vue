@@ -1,5 +1,5 @@
 <template>
-    <a-menu v-if="!item.meta.hide" :default-open-keys="openKeysArr(targetArr)" :selected-keys="targetArr" :style="{ width: '100%' }" @menuItemClick="onClickMenuItem">
+    <a-menu v-if="!item.meta.hide && checkIdentity(item)" :default-open-keys="openKeysArr(targetArr)" :selected-keys="targetArr" :style="{ width: '100%' }" @menuItemClick="onClickMenuItem">
         <a-menu-item v-if="!checkNodes(item)" :key="item.path">
             <component :is="item.meta.icon" />
             {{ item.meta.title }}
@@ -20,6 +20,7 @@
 import Item from "./NavItem.vue";
 import { defineComponent, ref, watch } from "vue";
 import { routes } from "../../../router";
+import { useStore } from "vuex";
 
 export default defineComponent({
     name: "Nav",
@@ -41,19 +42,24 @@ export default defineComponent({
     },
     components: { Item },
     setup(props, ctx) {
+        let store = useStore();
+        let { identity } = store.state.user;
         const collapsed = ref(false);
         let targetArr = ref(props.selectArr);
         watch(
             () => props.selectArr,
             // eslint-disable-next-line no-unused-vars
             (x, y) => {
-                console.log("选择菜单", x);
                 targetArr.value = x;
             }
         );
         const onCollapse = () => {
             collapsed.value = !collapsed.value;
         };
+
+        function checkIdentity(item) {
+            return item.meta.identity.includes(identity);
+        }
 
         function addPath(parents, node) {
             return `${parents}/${node}`;
@@ -82,6 +88,7 @@ export default defineComponent({
             checkNodes,
             targetArr,
             openKeysArr,
+            checkIdentity,
         };
     },
 });

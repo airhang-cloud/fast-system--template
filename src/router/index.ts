@@ -16,6 +16,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "关于",
                     icon: "icon-link",
+                    identity: ["admin", "user1"],
                     hide: true,
                 },
                 // route level code-splitting
@@ -29,6 +30,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "面板中心",
                     icon: "IconHome",
+                    identity: ["admin", "user1"],
                 },
                 component: () => import("../views/Pages/DashBoard/index.vue"),
             },
@@ -39,6 +41,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "个人中心",
                     icon: "icon-user",
+                    identity: ["admin", "user1"],
                 },
                 component: () => import("../views/Pages/Mine/index.vue"),
                 children: [
@@ -78,6 +81,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "权限控制",
                     icon: "icon-settings",
+                    identity: ["admin", "user1"],
                 },
                 component: () => import("../views/Pages/Role/index.vue"),
                 children: [
@@ -99,6 +103,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "系统信息",
                     icon: "icon-relation",
+                    identity: ["admin", "user1"],
                 },
                 component: () => import("../views/Pages/Infos/index.vue"),
                 children: [

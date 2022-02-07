@@ -34,6 +34,10 @@
     border: 1px solid #d8d8d8;
 }
 
+.icon-default {
+    font-size: 22px;
+}
+
 #nprogress .bar {
     background: #156dff !important; //自定义颜色
 }

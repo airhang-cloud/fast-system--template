@@ -3,13 +3,13 @@
         <!--消息-->
         <a-badge :count="9" :max-count="99">
             <a-avatar shape="square">
-                <icon-notification style="font-size: 22px" />
+                <icon-notification class="icon-default" />
             </a-avatar>
         </a-badge>
         <a-divider direction="vertical" />
         <!--系统设置-->
         <a-dropdown @select="handlerLog($event, 0)">
-            <a-avatar shape="square" />
+            <icon-settings class="icon-default" />
             <template #content>
                 <a-doption v-for="el in headerMenu.setting" :value="el.key" :key="el.key">{{ el.label }}</a-doption>
             </template>
@@ -55,6 +55,9 @@ export default defineComponent({
     height: 100%;
     display: inline-flex;
     align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 45px;
     /*background-color: yellow;*/
 }
 
