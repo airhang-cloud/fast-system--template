@@ -1,7 +1,7 @@
 import { createStore } from "vuex";
 
-import user from "@/store/modules/user";
-import route from "@/store/modules/route";
+import user from "@/store/Modules/user";
+import route from "@/store/Modules/route";
 
 export default createStore({
     // state: {

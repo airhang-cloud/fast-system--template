@@ -11,12 +11,6 @@ const EZ = createApp(App);
 //独立组件
 import { install } from "@/components";
 
-// router.beforeEach((from, to, next) => {
-//     console.log(from.fullPath)
-//     setCurSelect(JSON.stringify([from.fullPath]))
-//     next()
-// })
-
 install.forEach((el) => {
     EZ.component(el.name, el);
 });
