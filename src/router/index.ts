@@ -49,7 +49,7 @@ export const routes: Array<RouteRecordRaw> = [
                             title: "我的星星",
                             icon: "",
                         },
-                        component: () => import("../views/Pages/Mine/Mystars/index.vue"),
+                        component: () => import("../views/Pages/Mine/MyStars/index.vue"),
                     },
                     {
                         path: "myproject",

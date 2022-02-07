@@ -3,5 +3,7 @@
     <container-box />
 </template>
 <script>
-export default {};
+export default {
+    name: "index",
+};
 </script>

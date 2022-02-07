@@ -22,7 +22,7 @@ import { defineComponent, ref, watch } from "vue";
 import { routes } from "../../../router";
 
 export default defineComponent({
-    name: "index",
+    name: "Nav",
     props: {
         //节点元素
         item: {

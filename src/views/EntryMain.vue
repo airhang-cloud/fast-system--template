@@ -38,6 +38,7 @@ import { onResize } from "@/utils/resize";
 import { IconCaretRight, IconCaretLeft } from "@arco-design/web-vue/es/icon";
 
 export default defineComponent({
+    name: "index",
     components: {
         IconCaretRight,
         IconCaretLeft,
