@@ -5,7 +5,7 @@
         <a-typography :style="{ marginTop: '-40px' }">
             <a-typography-title
                 >当前身份: {{ identity }}
-                <a-switch type="round" v-model="value" checked-value="yes" unchecked-value="no">
+                <a-switch type="round" v-model="value" @change="handlerChange" checked-value="yes" unchecked-value="no">
                     <template #checked>开启管理员模式</template>
                     <template #unchecked>关闭管理员切换为普通</template>
                 </a-switch></a-typography-title
@@ -24,11 +24,12 @@
                 </ul>
             </a-typography-paragraph>
         </a-typography>
-        <!-- 角色切换 -->
     </container-box>
 </template>
 <script>
 import { mapState } from "vuex";
+// eslint-disable-next-line no-unused-vars
+import { Modal } from "@arco-design/web-vue";
 export default {
     name: "RoleSetting",
     computed: {
@@ -40,7 +41,9 @@ export default {
         };
     },
     methods: {
-        handlerToggleRole() {},
+        handlerChange(val) {
+            console.log("变化了", val);
+        },
     },
 };
 </script>

@@ -30,7 +30,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "面板中心",
                     icon: "IconHome",
-                    identity: ["admin", "user1"],
+                    identity: ["admin", "user1", "user2"],
                 },
                 component: () => import("../views/Pages/DashBoard/index.vue"),
             },
@@ -41,7 +41,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "个人中心",
                     icon: "icon-user",
-                    identity: ["admin", "user1"],
+                    identity: ["admin", "user1", "user2"],
                 },
                 component: () => import("../views/Pages/Mine/index.vue"),
                 children: [

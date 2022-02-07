@@ -46,9 +46,6 @@ export default defineComponent({
         HeaderTool,
     },
     setup() {
-        // service.post("/login").then(res => {
-        //   console.log("r",res)
-        // })
         const collapsed = ref(false);
         console.log("f", getCurSelect());
         let targetArr = ref(JSON.parse(getCurSelect()));
