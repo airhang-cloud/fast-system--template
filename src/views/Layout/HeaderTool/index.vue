@@ -19,7 +19,7 @@
         <a-dropdown @select="handlerLog($event, 1)">
             <img class="user-icon" />
             <template #content>
-                <a-doption value="user">用户: airhang</a-doption>
+                <a-doption value="user">用户: {{ user }}</a-doption>
                 <a-doption value="level">等级: Dsvip</a-doption>
                 <a-doption value="log">登出当前账号</a-doption>
             </template>
@@ -30,16 +30,20 @@
 <script>
 import { defineComponent } from "vue";
 import { headerMenu, methods } from "./data";
+import { useStore } from "vuex";
 
 export default defineComponent({
     name: "index",
     setup() {
+        let store = useStore();
+        let { user } = store.state.user;
         function handlerLog(val, flag) {
             methods[flag][val]();
         }
         return {
             handlerLog,
             headerMenu,
+            user,
         };
     },
 });

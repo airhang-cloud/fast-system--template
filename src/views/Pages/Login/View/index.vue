@@ -16,7 +16,7 @@
                 :validate-trigger="['change', 'focus']"
                 label="密码"
             >
-                <a-input v-model="form.psw" placeholder="密码输入..." />
+                <a-input-password v-model="form.psw" placeholder="密码输入..." />
             </a-form-item>
             <a-form-item>
                 <a-button html-type="submit" type="primary" size="large">登录</a-button>

@@ -26,6 +26,14 @@ export function getCurSelect(): string {
     return sessionStorage.getItem("ez-admin-nav") || JSON.stringify(["/dashboard"]);
 }
 
+export function setCurUser(user: string) {
+    localStorage.setItem("ez-admin-nav-user", user);
+}
+
+export function getCurUser(): string {
+    return localStorage.getItem("ez-admin-nav-user") || "EZ-Admin";
+}
+
 export function clearConfig() {
     localStorage.clear();
     sessionStorage.clear();
