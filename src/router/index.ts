@@ -128,6 +128,7 @@ export const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
     history: createWebHashHistory(process.env.BASE_URL),
     routes,
+    /**业务路由可拆包放入**/
 });
 router.beforeEach((from, to, next) => {
     let tit = from.meta.title;

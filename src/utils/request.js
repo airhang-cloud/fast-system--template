@@ -27,7 +27,6 @@ service.interceptors.response.use(
         // Any status code that lie within the range of 2xx cause this function to trigger
         // Do something with response data
         const { data, status } = response;
-        console.log("获取数据", response);
         if (status != 200 && data.code != 200) {
             Message.error("请求超时");
         } else return response;
