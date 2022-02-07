@@ -1,6 +1,6 @@
 <!--样例模板-->
 <template>
-    <container-box>
+    <container-box title="系统信息" subtitle="系统介绍">
         <a-typography :style="{ marginTop: '-40px' }">
             <a-typography-title> EZ-Admin </a-typography-title>
             <a-typography-paragraph>
