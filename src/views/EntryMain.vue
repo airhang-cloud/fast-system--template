@@ -18,7 +18,7 @@
             </a-layout-header>
             <!--内容内部-->
             <a-layout>
-                <!--面包屑-->
+                <!--面包屑--有空再做-->
                 <!--主试图盒子区域-->
                 <a-layout-content>
                     <router-view class="animate__animated animate__fadeIn animate__faster content-box" />
@@ -33,7 +33,7 @@ import Nav from "./Layout/Nav";
 import HeaderTool from "./Layout/HeaderTool/index";
 import { defineComponent, ref } from "vue";
 import { useStore } from "vuex";
-import { setCurSelect, getCurSelect } from "@/utils";
+import { setCurSelect, getCurSelect, getCurUser, getCurIdentity } from "@/utils";
 import { onResize } from "@/utils/resize";
 import { IconCaretRight, IconCaretLeft } from "@arco-design/web-vue/es/icon";
 
@@ -76,6 +76,9 @@ export default defineComponent({
             routes,
             targetArr,
         };
+    },
+    mounted() {
+        this.$notification.info(`欢迎回来,${getCurUser()},当前身份：${getCurIdentity()}`);
     },
 });
 </script>

@@ -58,6 +58,8 @@ export default defineComponent({
         };
 
         function checkIdentity(item) {
+            // eslint-disable-next-line no-prototype-builtins
+            // if (!item.hasOwnProperty("identity")) return true;
             return item.meta.identity.includes(identity);
         }
 

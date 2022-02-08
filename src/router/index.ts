@@ -81,7 +81,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "权限控制",
                     icon: "icon-settings",
-                    identity: ["admin", "user1"],
+                    identity: ["admin", "user1", "user2"],
                 },
                 component: () => import("../views/Pages/Role/index.vue"),
                 children: [
