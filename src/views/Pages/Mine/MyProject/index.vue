@@ -1,5 +1,5 @@
 <template>
-    <h1>我的工程</h1>
+    <container-box title="个人中心" subtitle="我的工程"></container-box>
 </template>
 
 <script>

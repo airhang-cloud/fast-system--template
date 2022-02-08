@@ -82,7 +82,7 @@ export default defineComponent({
             collapsed,
             onCollapse,
             onClickMenuItem(key) {
-                console.log(key);
+                // console.log(key);
                 ctx.emit("selectNode", { path: key });
             },
             addPath,

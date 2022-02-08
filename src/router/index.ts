@@ -50,6 +50,7 @@ export const routes: Array<RouteRecordRaw> = [
                         name: "mystars",
                         meta: {
                             title: "我的星星",
+                            officalTitle: "个人中心",
                             icon: "",
                         },
                         component: () => import("../views/Pages/Mine/MyStars/index.vue"),
@@ -59,6 +60,7 @@ export const routes: Array<RouteRecordRaw> = [
                         name: "myproject",
                         meta: {
                             title: "我的工程",
+                            officalTitle: "个人中心",
                             icon: "",
                         },
                         component: () => import("../views/Pages/Mine/MyProject/index.vue"),
@@ -68,6 +70,7 @@ export const routes: Array<RouteRecordRaw> = [
                         name: "myInfo",
                         meta: {
                             title: "我的信息",
+                            officalTitle: "个人中心",
                             icon: "",
                         },
                         component: () => import("../views/Pages/Mine/MyInfo/index.vue"),
@@ -90,6 +93,7 @@ export const routes: Array<RouteRecordRaw> = [
                         name: "role-setting",
                         meta: {
                             title: "切换角色",
+                            officalTitle: "权限控制",
                             icon: "",
                         },
                         component: () => import("../views/Pages/Role/RoleSetting/index.vue"),
@@ -112,6 +116,7 @@ export const routes: Array<RouteRecordRaw> = [
                         name: "infosystem",
                         meta: {
                             title: "系统介绍",
+                            officalTitle: "系统信息",
                             icon: "",
                         },
                         component: () => import("../views/Pages/Infos/InfoSystem/index.vue"),

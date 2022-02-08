@@ -47,7 +47,7 @@ export default defineComponent({
     },
     setup() {
         const collapsed = ref(false);
-        console.log("f", getCurSelect());
+        // console.log("CurSelect", getCurSelect());
         let targetArr = ref(JSON.parse(getCurSelect()));
         const onCollapse = () => {
             collapsed.value = !collapsed.value;
@@ -61,8 +61,9 @@ export default defineComponent({
         onResize((res) => {
             res["width"] < 900 ? hideCollapse() : openCollapse();
         });
+        // eslint-disable-next-line no-unused-vars
         let store = useStore();
-        console.log("vuex当前用户", store.state.user);
+        // console.log("vuex当前用户", store.state.user);
         return {
             collapsed,
             onCollapse,
