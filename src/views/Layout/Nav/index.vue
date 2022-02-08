@@ -1,6 +1,6 @@
 <template>
     <a-menu
-        accordion="true"
+        :accordion="!0"
         v-if="!item.meta.hide && checkIdentity(item)"
         :default-open-keys="openKeysArr(targetArr)"
         :selected-keys="targetArr"

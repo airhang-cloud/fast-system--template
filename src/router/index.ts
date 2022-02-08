@@ -106,7 +106,7 @@ export const routes: Array<RouteRecordRaw> = [
                 redirect: "/infosystem",
                 meta: {
                     title: "系统信息",
-                    icon: "icon-relation",
+                    icon: "icon-apps",
                     identity: ["admin", "user1"],
                 },
                 component: () => import("../views/Pages/Infos/index.vue"),
