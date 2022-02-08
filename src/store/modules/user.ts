@@ -15,8 +15,8 @@ export default {
     actions: {
         handlerlogin: async (ctx: any, val: any) => {
             const { data } = await axios.post("/api/login", val);
-            const { token, route, user, identity } = data.data;
             if (Number(data.code) === 200) {
+                const { token, route, user, identity } = data.data;
                 setToken(token);
                 setRoute(route);
                 setCurUser(user);
@@ -26,7 +26,9 @@ export default {
                     msg: data.msg,
                     user: user,
                 };
-            } else Message.error(data.msg);
+            } else {
+                Message.error(data.msg);
+            }
         },
     },
     namespaced: true,

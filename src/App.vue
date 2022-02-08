@@ -44,6 +44,12 @@
     margin: 0 auto;
 }
 
+.padding-box {
+    background-color: #fafafa;
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+}
+
 #nprogress .bar {
     background: #156dff !important; //自定义颜色
 }

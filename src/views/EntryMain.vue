@@ -20,7 +20,7 @@
             <a-layout>
                 <!--面包屑--有空再做-->
                 <!--主试图盒子区域-->
-                <a-layout-content>
+                <a-layout-content class="padding-box">
                     <router-view class="animate__animated animate__fadeIn animate__faster content-box" />
                 </a-layout-content>
             </a-layout>
@@ -147,5 +147,6 @@ export default defineComponent({
     height: calc(100vh - 60px);
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: #fff;
 }
 </style>
