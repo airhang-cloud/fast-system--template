@@ -6,7 +6,7 @@
             <a-typography-paragraph>
                 "EZ-Admin"顾名思义:这是一款简单的后台管理系统,作为一名业余前端人员,作者从代码上做了很大的简化,可以说只要你对前端有感兴趣,那么这个系统绝对是很快就能上手,目前版本主要面向新手,若大神偶然路过,欢迎指点
             </a-typography-paragraph>
-            <a-typography-paragraph>
+            <a-typography-paragraph blockquote>
                 "Ez-admin" as the name implies: this is a simple background management system, as an amateur front-end personnel, the author has made a great simplification from the code, it can be
                 said that as long as you are interested in the front-end, then this system is absolutely soon to be able to use, the current version is mainly for novices, if the big god accidentally
                 passing by, welcome to give advice
@@ -14,63 +14,31 @@
             </a-typography-paragraph>
             <a-typography-title :heading="2">技术栈</a-typography-title>
             <a-typography-paragraph>
-                The ArcoDesign component library defines a set of default particle variables, and a custom theme is to
-                <a-typography-text mark>customize</a-typography-text>
-                and
-                <a-typography-text underline>overwrite</a-typography-text>
-                this variable list.
+                基于主流前端框架 <a-typography-text mark>Vue(版本3)</a-typography-text>搭建的系统，UI框架选用 字节出品的 <a-typography-text mark>ArcoDesign</a-typography-text>,后端服务采用
+                <a-typography-text mark>Nestjs</a-typography-text>简单模拟
             </a-typography-paragraph>
             <a-typography-paragraph blockquote>
-                A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the
-                form of a
-                <a-typography-text code>prototype</a-typography-text>
-                ,
-                <a-typography-text code>product</a-typography-text>
-                or
-                <a-typography-text code>process</a-typography-text>
-                . The verb to design expresses the process of developing a design.
-            </a-typography-paragraph>
-            <a-typography-paragraph mark underline delete
-                >A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process.
-            </a-typography-paragraph>
-            <a-typography-paragraph>
-                <ul>
-                    <li>
-                        Architectural blueprints
-                        <ul>
-                            <li>Architectural blueprints</li>
-                        </ul>
-                    </li>
-                    <li>Engineering drawings</li>
-                    <li>Business processes</li>
-                </ul>
+                The back-end service adopts the system built based on the mainstream front-end framework Vue(version 3), the UI framework selects ArcoDesign produced by byte, and the back-end service
+                adopts simple simulation of Nestjs
             </a-typography-paragraph>
             <a-typography-paragraph>
                 <ol>
-                    <li>Architectural blueprints</li>
-                    <li>Engineering drawings</li>
-                    <li>Business processes</li>
+                    <li>Vue3</li>
+                    <li>ArcoDesign</li>
+                    <li>Nestjs</li>
                 </ol>
             </a-typography-paragraph>
+            <a-typography-title :heading="2">知识储备</a-typography-title>
             <a-typography-paragraph>
                 <ol>
-                    <li>Architectural blueprints</li>
-                    <li>Engineering drawings</li>
-                    <li>Business processes</li>
-                </ol>
-            </a-typography-paragraph>
-            <a-typography-paragraph>
-                <ol>
-                    <li>Architectural blueprints</li>
-                    <li>Engineering drawings</li>
-                    <li>Business processes</li>
-                </ol>
-            </a-typography-paragraph>
-            <a-typography-paragraph>
-                <ol>
-                    <li>Architectural blueprints</li>
-                    <li>Engineering drawings</li>
-                    <li>Business processes</li>
+                    <li>JavaScript基本语法,熟悉Es6最佳</li>
+                    <li>前端框架的简单使用</li>
+                    <li>前端存储技术</li>
+                    <li>Css预处理器的简单了解</li>
+                    <li>多人协同开发的了解</li>
+                    <li>前端工程化构建</li>
+                    <li>网络请求</li>
+                    <li>服务端简单了解</li>
                 </ol>
             </a-typography-paragraph>
         </a-typography>
