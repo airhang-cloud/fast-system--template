@@ -38,6 +38,12 @@
     font-size: 22px;
 }
 
+.rateSty {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
 #nprogress .bar {
     background: #156dff !important; //自定义颜色
 }
