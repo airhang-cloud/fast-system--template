@@ -41,7 +41,7 @@ export const routes: Array<RouteRecordRaw> = [
                 meta: {
                     title: "个人中心",
                     icon: "icon-user",
-                    identity: ["admin", "user1", "user2"],
+                    identity: ["admin", "user1"],
                 },
                 component: () => import("../views/Pages/Mine/index.vue"),
                 children: [

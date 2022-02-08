@@ -1,23 +1,23 @@
 <template>
     <div class="header-tool">
         <!--消息-->
-        <a-badge :count="9" :max-count="99">
+        <a-badge :count="9" :max-count="99" class="animate__animated animate__fadeInUp animate__delay-.5s">
             <a-avatar shape="square">
                 <icon-notification class="icon-default" />
             </a-avatar>
         </a-badge>
         <a-divider direction="vertical" />
         <!--系统设置-->
-        <a-dropdown @select="handlerLog($event, 0)">
-            <icon-settings class="icon-default" />
+        <a-dropdown @select="handlerLog($event, 0)" class="animate__animated animate__flipInX">
+            <icon-settings class="icon-default animate__animated animate__fadeInUp animate__delay-1s" />
             <template #content>
                 <a-doption v-for="el in headerMenu.setting" :value="el.key" :key="el.key">{{ el.label }}</a-doption>
             </template>
         </a-dropdown>
         <a-divider direction="vertical" />
         <!--头像个人数据详情-->
-        <a-dropdown @select="handlerLog($event, 1)">
-            <img class="user-icon" />
+        <a-dropdown @select="handlerLog($event, 1)" class="animate__animated animate__flipInX">
+            <img class="user-icon animate__animated animate__fadeInUp animate__delay-1s" />
             <template #content>
                 <a-doption value="user">用户: {{ user }}</a-doption>
                 <a-doption value="level">等级: Dsvip</a-doption>

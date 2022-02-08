@@ -79,7 +79,7 @@ export default defineComponent({
         };
     },
     mounted() {
-        this.$notification.info(`欢迎回来,${getCurUser()},当前身份：${getCurIdentity()}`);
+        this.$notification.info({ content: `欢迎回来,${getCurUser()},当前身份：${getCurIdentity()}`, position: "bottomRight" });
     },
 });
 </script>

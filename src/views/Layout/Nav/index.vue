@@ -1,5 +1,12 @@
 <template>
-    <a-menu v-if="!item.meta.hide && checkIdentity(item)" :default-open-keys="openKeysArr(targetArr)" :selected-keys="targetArr" :style="{ width: '100%' }" @menuItemClick="onClickMenuItem">
+    <a-menu
+        accordion="true"
+        v-if="!item.meta.hide && checkIdentity(item)"
+        :default-open-keys="openKeysArr(targetArr)"
+        :selected-keys="targetArr"
+        :style="{ width: '100%' }"
+        @menuItemClick="onClickMenuItem"
+    >
         <a-menu-item v-if="!checkNodes(item)" :key="item.path">
             <component :is="item.meta.icon" />
             {{ item.meta.title }}
