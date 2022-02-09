@@ -50,6 +50,10 @@
     box-sizing: border-box;
 }
 
+.pagination-center {
+    justify-content: flex-end;
+}
+
 #nprogress .bar {
     background: #156dff !important; //自定义颜色
 }

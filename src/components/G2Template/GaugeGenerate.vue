@@ -1,5 +1,5 @@
 <template>
-    <div id="container1" class="rateSty" />
+    <div id="container1" class="rateSty animate__animated animate__fadeIn animate__faster animate__zoomIn" />
 </template>
 
 <script>

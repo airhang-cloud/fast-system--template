@@ -24,5 +24,5 @@ export default defineComponent({
 });
 </script>
 <template>
-    <div id="container2" class="rateSty" />
+    <div id="container2" class="rateSty animate__animated animate__fadeIn animate__faster animate__zoomIn" />
 </template>

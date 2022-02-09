@@ -7,7 +7,7 @@
         </a-row>
         <a-row class="grid-demo" :gutter="24">
             <a-col v-for="i in adList" :key="i" :span="8">
-                <a-card :style="{ width: '100%' }" :title="i.label" hoverable>
+                <a-card :style="{ width: '100%' }" :title="i.label" class="animate__animated animate__fadeIn animate__faster animate__zoomIn" hoverable>
                     <template #extra>
                         <a-link>More</a-link>
                     </template>

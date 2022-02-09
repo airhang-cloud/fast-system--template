@@ -11,7 +11,7 @@
         <a-dropdown @select="handlerLog($event, 0)" class="animate__animated animate__flipInX">
             <icon-settings class="icon-default animate__animated animate__fadeInUp animate__delay-1s" />
             <template #content>
-                <a-doption v-for="el in headerMenu.setting" :value="el.key" :key="el.key">{{ el.label }}</a-doption>
+                <a-doption title="有空再弄" v-for="el in headerMenu.setting" :value="el.key" :key="el.key">{{ el.label }}</a-doption>
             </template>
         </a-dropdown>
         <a-divider direction="vertical" />
