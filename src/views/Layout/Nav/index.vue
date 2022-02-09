@@ -11,7 +11,7 @@
             <component :is="item.meta.icon" />
             {{ item.meta.title }}
         </a-menu-item>
-        <a-sub-menu v-else :key="item">
+        <a-sub-menu v-else :key="item.path">
             <template #title>
                 <span>
                     <component :is="item.meta.icon" />
