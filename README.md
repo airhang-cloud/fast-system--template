@@ -9,7 +9,7 @@
 -   小型系统搭建，开箱立马使用
 -   适合对象: 新手、学生、公司小项目
 -   新技术结合进行尝试
--   项目文档库整合中---loading---
+-   [项目文档库整合中](https://airhang-cloud.github.io/fast-template-docs/)
 -   此项目仓库仅存放前端代码，后端服务迁移到 [ez-server](https://github.com/airhang-cloud/nestjs-template-mock)
 
 ## 技术
@@ -87,3 +87,7 @@
 ### 项目属于简单入门水平，欢迎提出问题，为后续更好的输出做准备，如果小伙伴们觉得对你有很大帮助可以点个 `star` 哟
 
 ## 项目会持续更新
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
