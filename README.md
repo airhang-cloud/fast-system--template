@@ -1,22 +1,24 @@
 ## 说明
 
+关于后台系统的项目，大部分人应该都很熟悉了，不论是 C 端还是 B、G 端，我们都会接触到“后管”开发。特别是 B、G 端的小伙伴，想必是最常做这类项目了，当然市场上主流的开源其实已经很多了,自己作为一名业余前端人员,出于对前端技术的兴趣,所以尝试搭一套简单的后台系统,心里想平常都是用别人现成的去二次开发,那自己是不是也可以去着手设计一套,通过这次的设计,不仅仅让自己更进一步了解前端技术,也悟到了一些开发思维,个人对这套系统更多的是以"新人"的角度出发,同时这个小系统在一定程度上可以很快"拥抱"新人,最后希望这个小项目能给大家带来一些帮助~~~
+
 ## fast-system-template
 
 -   小型系统搭建，开箱立马使用
 -   适合对象: 新手、学生、公司小项目
 -   新技术结合进行尝试
+-   项目文档库整合中---loading---
 
 ## 技术
 
-| Technology  | 描述                                                                                  |
-| ----------- | ------------------------------------------------------------------------------------- |
-| Vue3.x      | 主流前端框架                                                                          |
-| Arco-Design | 字节跳动最近开源的 UI 组件框架                                                        |
-| Vue 全家桶  | Vuex、VueRouter                                                                       |
-| axios       | ajax(promise)的网络请求库                                                             |
-| TypeScript  | JavaScript 的超集 在这个项目中会简单使用下，后续也会持续更好的集成到项目里            |
-| nestjs      | node 微服务后端框架，项目里使用其进行简单服务的搭建，感兴趣的伙伴可以自己进入官网研究 |
-| git         | git 工作流                                                                            |
+| Technology  | 描述                                                                       |
+| ----------- | -------------------------------------------------------------------------- |
+| Vue3.x      | 主流前端框架                                                               |
+| Arco-Design | 字节跳动最近开源的 UI 组件框架                                             |
+| Vue 全家桶  | Vuex、VueRouter                                                            |
+| axios       | ajax(promise)的网络请求库                                                  |
+| TypeScript  | JavaScript 的超集 在这个项目中会简单使用下，后续也会持续更好的集成到项目里 |
+| git         | git 工作流                                                                 |
 
 ## 编辑器
 
@@ -42,32 +44,28 @@
 
 #### 进入主体界面
 
-![img](https://img.airhang.ltd/ez-admin-ba01.jpg)
+![img](https://img.airhang.ltd/main.jpg)
+
+#### 切换角色
+
+![img](https://img.airhang.ltd/toggleRole.jpg)
+
+#### 角色: user2
+
+![img](https://img.airhang.ltd/user2.jpg)
+
+#### 角色: admin
+
+![img](https://img.airhang.ltd/admin.jpg)
+
+#### 系统信息
+
+![img](https://img.airhang.ltd/info.jpg)
 
 #### 退出登录提示
 
 ![img](https://img.airhang.ltd/ez-admin-ba02.jpg)
 
-## 项目使用
+### 项目属于简单入门水平，欢迎提出问题，为后续更好的输出做准备，如果小伙伴们觉得对你有很大帮助可以点个 `star` 哟
 
-## Project setup
-
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### 项目属于简单入门水平，不喜勿喷，欢迎提出问题，为后续更好的输出做准备，如果小伙伴们觉得对你有很大帮助可以点个 `star` 哟
-
-## 项目会持续更新，作者是个爱喝可乐的大叔，你懂的！！
+## 项目会持续更新
