@@ -10,6 +10,7 @@
 -   适合对象: 新手、学生、公司小项目
 -   新技术结合进行尝试
 -   项目文档库整合中---loading---
+-   此项目仓库仅存放前端代码，后端服务迁移到 [ez-server](https://github.com/airhang-cloud/nestjs-template-mock)
 
 ## 技术
 
@@ -37,6 +38,21 @@
 | Color Highlight           | 对应颜色高亮                         |
 | ESLint                    | 提高开发效率，编辑器直接检测代码规范 |
 | Prettier - Code formatter | 代码格式化                           |
+
+## 如何启动项目
+
+建议您把前后端项目分别 clone 到本地，
+
+-   [前端部分](https://github.com/airhang-cloud/fast-system--template)
+-   [后端部分](https://github.com/airhang-cloud/nestjs-template-mock)
+-   项目依赖导入(您可以完全按照自己的安装包方式)
+    -   前端采取 `yarn`包管理
+    -   后端采取 `pnpm`包管理
+
+一切就绪后:
+
+-   前端启动 `yarn serve` / `pnpm serve` / `npm run serve`
+-   后端启动 `yarn start` / `pnpm start` / `npm start`
 
 ## 产品(暂时简单描述，文档后续补充完整)
 
