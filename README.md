@@ -4,6 +4,8 @@
 
 ## fast-system-template
 
+![img](https://img.airhang.ltd/Logo.png)
+
 -   小型系统搭建，开箱立马使用
 -   适合对象: 新手、学生、公司小项目
 -   新技术结合进行尝试
