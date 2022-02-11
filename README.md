@@ -64,27 +64,12 @@
 
 ![img](https://img.airhang.ltd/main.jpg)
 
-#### 切换角色
-
-![img](https://img.airhang.ltd/toggleRole.jpg)
-
-#### 角色: user2
-
-![img](https://img.airhang.ltd/user2.jpg)
-
-#### 角色: admin
-
-![img](https://img.airhang.ltd/admin.jpg)
-
-#### 系统信息
-
-![img](https://img.airhang.ltd/info.jpg)
-
-#### 退出登录提示
-
-![img](https://img.airhang.ltd/ez-admin-ba02.jpg)
-
 ### 项目属于简单入门水平，欢迎提出问题，为后续更好的输出做准备，如果小伙伴们觉得对你有很大帮助可以点个 `star` 哟
+
+## 更多信息
+
+-   关注微信公众号“部落单元阁”可以获取更多技术宝典
+-   [常用技术知识链接库](https://airhang.ltd/)
 
 ## 项目会持续更新
 
