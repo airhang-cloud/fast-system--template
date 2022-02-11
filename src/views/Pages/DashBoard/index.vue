@@ -1,12 +1,12 @@
 <template>
     <container-box title="面板中心" subtitle="数据详情">
         <a-row class="grid-demo" :gutter="24">
-            <a-col v-for="el in comList" :key="el" :span="8">
+            <a-col v-for="el in comList" :key="el" :xs="24" :sm="24" :md="8" :lg="8" :xl="8" :xxl="8">
                 <component :is="el.com" :data="Options[el.options]" />
             </a-col>
         </a-row>
         <a-row class="grid-demo" :gutter="24">
-            <a-col v-for="i in adList" :key="i" :span="8">
+            <a-col v-for="i in adList" :key="i" :xs="24" :sm="24" :md="8" :lg="8" :xl="8" :xxl="8">
                 <a-card :style="{ width: '100%' }" :title="i.label" class="animate__animated animate__fadeIn animate__faster animate__zoomIn" hoverable>
                     <template #extra>
                         <a-link>More</a-link>
