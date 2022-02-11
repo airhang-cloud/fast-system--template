@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <container-box title="个人中心" subtitle="我的工程">
         <div class="col-2">
             <a-button type="primary" @click="sort">reset</a-button>
         </div>
@@ -27,7 +27,7 @@
                 </template>
             </draggable>
         </div>
-    </div>
+    </container-box>
 </template>
 
 <script>
