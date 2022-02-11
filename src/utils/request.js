@@ -3,7 +3,7 @@ import { getToken } from "./index";
 import { Message } from "@arco-design/web-vue";
 
 export let service = axios.create({
-    baseURL: "/api",
+    baseURL: process.env.VUE_APP_BASE_API,
     timeout: 30000,
 });
 

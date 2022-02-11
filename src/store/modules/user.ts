@@ -1,6 +1,7 @@
-import axios from "axios";
-import { setToken, setRoute, setCurUser, getCurUser, setCurIdentity, getCurIdentity } from "@/utils";
+// import axios from "axios";
+import { getCurUser, getCurIdentity } from "@/utils";
 import { Message } from "@arco-design/web-vue";
+import methods from "./methods";
 
 export default {
     state: {
@@ -14,13 +15,14 @@ export default {
     },
     actions: {
         handlerlogin: async (ctx: any, val: any) => {
-            const { data } = await axios.post("/api/login", val);
+            // const { data } = await axios.post("/api/login", val);
+            //@ts-ignore
+            const { data } = await methods[process.env.NODE_ENV](val);
+            console.log(data);
+
             if (Number(data.code) === 200) {
                 const { token, route, user, identity } = data.data;
-                setToken(token);
-                setRoute(route);
-                setCurUser(user);
-                setCurIdentity(identity);
+                methods["login"](token, route, user, identity);
                 return {
                     login: true,
                     msg: data.msg,

@@ -7,15 +7,7 @@
             <a-form-item field="user" :rules="[{ required: true, message: '用户名可使用admin' }]" :validate-trigger="['change', 'focus']" label="用户">
                 <a-input v-model="form.user" placeholder="用户输入..." />
             </a-form-item>
-            <a-form-item
-                field="psw"
-                :rules="[
-                    { required: true, message: '密码可使用6个6' },
-                    { minLength: 6, message: '最小长度为6' },
-                ]"
-                :validate-trigger="['change', 'focus']"
-                label="密码"
-            >
+            <a-form-item field="psw" :rules="[{ required: true, message: '密码可使用6个6' }]" :validate-trigger="['change', 'focus']" label="密码">
                 <a-input-password v-model="form.psw" placeholder="密码输入..." />
             </a-form-item>
             <a-form-item>
