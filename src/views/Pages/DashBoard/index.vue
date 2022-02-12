@@ -1,10 +1,6 @@
 <template>
     <container-box title="面板中心" subtitle="数据详情">
-        <a-row class="grid-demo" :gutter="24">
-            <a-col v-for="el in comList" :key="el" :xs="24" :sm="24" :md="8" :lg="8" :xl="8" :xxl="8">
-                <component :is="el.com" :data="Options[el.options]" />
-            </a-col>
-        </a-row>
+        <a-divider orientation="left"><h3>数据分析</h3></a-divider>
         <a-row class="grid-demo" :gutter="24">
             <a-col v-for="i in adList" :key="i" :xs="24" :sm="24" :md="8" :lg="8" :xl="8" :xxl="8">
                 <a-card :style="{ width: '100%' }" :title="i.label" class="animate__animated animate__fadeIn animate__faster animate__zoomIn" hoverable>
@@ -22,9 +18,21 @@
                 </a-card>
             </a-col>
         </a-row>
-        <!-- <div id="container" /> -->
-        <ColumGenerateVue style="margin-top: 15px" :data="list" />
-        <!-- columner -->
+        <!-- G2专区 -->
+        <a-row class="grid-demo top-16" :gutter="24">
+            <a-col v-for="el in comList2" :key="el" :xs="24" :sm="24" :md="12" :lg="12" :xl="12" :xxl="12">
+                <component :is="el.com" />
+            </a-col>
+        </a-row>
+        <ColumGenerateVue class="top-16" :data="list" />
+        <!-- G2专区 -->
+        <a-divider class="top-16" orientation="left"><h3>图形分析</h3></a-divider>
+        <a-row class="grid-demo" :gutter="24">
+            <a-col v-for="el in comList" :key="el" :xs="24" :sm="24" :md="8" :lg="8" :xl="8" :xxl="8">
+                <component :is="el.com" :data="Options[el.options]" />
+            </a-col>
+        </a-row>
+        <SankeyGenerate />
     </container-box>
 </template>
 
@@ -34,6 +42,9 @@ import ColumGenerateVue from "@/components/G2Template/ColumGenerate.vue";
 import GaugeGenerateVue from "@/components/G2Template/GaugeGenerate.vue";
 import LiquidGenerateVue from "@/components/G2Template/LiquidGenerate.vue";
 import RadarGenerateVue from "@/components/G2Template/RadarGenerate.vue";
+import PieGenerateVue from "@/components/G2Template/PieGenerate.vue";
+import SankeyGenerate from "@/components/G2Template/SankeyGenerate";
+import BarGenerate from "@/components/G2Template/BarGenerate";
 
 export default {
     name: "index",
@@ -163,9 +174,10 @@ export default {
                 { com: "LiquidGenerateVue", options: null },
                 { com: "RadarGenerateVue", options: "radar" },
             ],
+            comList2: [{ com: "PieGenerateVue" }, { com: "BarGenerate" }],
         };
     },
-    components: { ColumGenerateVue, GaugeGenerateVue, LiquidGenerateVue, RadarGenerateVue },
+    components: { ColumGenerateVue, GaugeGenerateVue, LiquidGenerateVue, RadarGenerateVue, PieGenerateVue, SankeyGenerate, BarGenerate },
     mounted() {},
 };
 </script>
