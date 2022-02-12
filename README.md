@@ -70,6 +70,14 @@
 -   关注微信公众号“部落单元阁”可以获取更多技术宝典
 -   [常用技术知识链接库](https://airhang.ltd/)
 
+## ⚡️ 友情链接
+
+-   [CSDN](https://blog.csdn.net/weixin_44971067/article/details/122867641?spm=1001.2014.3001.5501)
+-   [Vuejs](https://v3.cn.vuejs.org/)
+-   [Antv--G2](https://g2.antv.vision/zh/examples/case/dynamic/#dynamic-bar)
+-   [arco.design](https://arco.design/)
+-   [biblbili-会飞长腿](https://www.bilibili.com/video/BV1VF411n7X6?spm_id_from=333.1007.top_right_bar_window_history.content.click)
+
 ## 👩‍💻 项目会持续更新
 
 ## License

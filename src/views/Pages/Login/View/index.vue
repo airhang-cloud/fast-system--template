@@ -81,4 +81,16 @@ export default {
         display: none;
     }
 }
+
+@media (max-width: 390px) {
+    .login-box {
+        width: 350px;
+    }
+}
+
+@media (max-width: 330px) {
+    .login-box {
+        width: 300px;
+    }
+}
 </style>
