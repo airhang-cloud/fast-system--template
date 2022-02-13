@@ -1,4 +1,10 @@
-/bower/l/:packageName
+![img](https://img.shields.io/badge/License-MIT-brightgreeng)
+
+![img](https://img.shields.io/badge/arco--design-%5E2.14.2-yellow)
+
+![img](https://img.shields.io/badge/Vue-%5E3.0.0-green)
+
+![img](https://img.shields.io/badge/fast--system----template-0.1.6-orange)
 
 ## 说明
 
