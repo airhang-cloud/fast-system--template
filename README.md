@@ -1,4 +1,4 @@
-![img](https://img.shields.io/badge/fast--system----template-0.1.6-orange?url=https://github.com/airhang-cloud/fast-system--template)
+[![img](https://img.shields.io/badge/fast--system----template-0.1.6-orange)](https://github.com/airhang-cloud/fast-system--template)
 
 ## 说明
 
