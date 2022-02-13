@@ -2,7 +2,9 @@
     <a-layout class="layout-demo">
         <!--菜单-->
         <a-layout-sider hide-trigger collapsible :collapsed="collapsed">
-            <div class="logo" />
+            <div class="logo">
+                <img class="iconSty" src="@/assets/float1.png" alt="" />
+            </div>
             <!--导航菜单-->
             <Nav v-for="el in routes[0].children" :key="el" :item="el" :select-arr="targetArr" @selectNode="onClickMenuItem" />
         </a-layout-sider>
@@ -91,8 +93,8 @@ export default defineComponent({
 }
 
 .layout-demo :deep(.arco-layout-sider) .logo {
-    height: 32px;
-    margin: 12px 8px;
+    height: 60px;
+    margin: 2px;
     background: rgba(255, 255, 255, 0.2);
 }
 
@@ -148,5 +150,12 @@ export default defineComponent({
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #fff;
+}
+
+.iconSty {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 </style>
