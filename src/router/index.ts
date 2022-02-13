@@ -3,6 +3,9 @@ import Home from "../views/EntryMain.vue";
 import { getToken, setCurSelect } from "@/utils";
 import NProgress from "@/utils/progress";
 
+// 导入模块路由
+import { relateRoute } from "./BussinessRouter/ModuleRelate";
+
 export const routes: Array<RouteRecordRaw> = [
     {
         path: "/",
@@ -123,6 +126,7 @@ export const routes: Array<RouteRecordRaw> = [
                     },
                 ],
             },
+            ...relateRoute["config"],
         ],
     },
     {
