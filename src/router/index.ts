@@ -137,6 +137,26 @@ export const routes: Array<RouteRecordRaw> = [
         },
         component: () => import("../views/Pages/Login/index.vue"),
     },
+    {
+        path: "/404",
+        name: "404",
+        meta: {
+            title: "404",
+        },
+        component: () => import(/* webpackChunkName: "Result" */ "../views/Pages/Result/404/index.vue"),
+    },
+    {
+        path: "/500",
+        name: "500",
+        meta: {
+            title: "500",
+        },
+        component: () => import(/* webpackChunkName: "Result" */ "../views/Pages/Result/500/index.vue"),
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        redirect: "/404",
+    },
 ];
 
 const router = createRouter({
