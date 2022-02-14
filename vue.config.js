@@ -22,6 +22,7 @@ module.exports = {
             args[0].title = "EZAdmin";
             return args;
         });
+        config.resolve.alias.set("vue-i18n", "vue-i18n/dist/vue-i18n.cjs.js");
         /* 添加分析工具,要查看打包文件大小情况时 记得先解开 取反 再执行 yarn build:report */
         if (!process.env.NODE_ENV === "production") {
             config.plugin("webpack-bundle-analyzer").use(require("webpack-bundle-analyzer").BundleAnalyzerPlugin).end();

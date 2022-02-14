@@ -6,6 +6,7 @@ import ArcoVue from "@arco-design/web-vue";
 import ArcoVueIcon from "@arco-design/web-vue/es/icon";
 import "@arco-design/web-vue/dist/arco.css";
 import "animate.css";
+import VueI18n from "@/language/index";
 
 const EZ = createApp(App);
 //独立组件
@@ -15,4 +16,4 @@ install.forEach((el) => {
     EZ.component(el.name, el);
 });
 
-EZ.use(store).use(router).use(ArcoVue).use(ArcoVueIcon).mount("#app");
+EZ.use(store).use(router).use(ArcoVue).use(ArcoVueIcon).use(VueI18n).mount("#app");

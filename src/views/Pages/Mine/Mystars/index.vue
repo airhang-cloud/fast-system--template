@@ -2,6 +2,10 @@
     <container-box title="个人中心" subtitle="我的星星">
         <a-table :columns="columns" :data="data" :pagination="no_default" />
         <a-pagination class="pagination-center" :total="50" show-total show-jumper show-page-size />
+        <a-divider orientation="left"><h3>I18 中英文切换</h3></a-divider>
+        <h1 class="top-16">{{ $t(`test.msg`) }}</h1>
+        <a-button type="primary" @click="toggleI18(`ch`)">切换中文</a-button>
+        <a-button class="left-16" type="primary" @click="toggleI18(`en`)">切换英文</a-button>
     </container-box>
 </template>
 
@@ -66,7 +70,20 @@ export default {
                     email: "william.smith@example.com",
                 },
             ],
+            methods: {
+                ch: () => {
+                    this.$i18n.locale = "ch";
+                },
+                en: () => {
+                    this.$i18n.locale = "en";
+                },
+            },
         };
+    },
+    methods: {
+        toggleI18(type) {
+            this.methods[type]();
+        },
     },
 };
 </script>
