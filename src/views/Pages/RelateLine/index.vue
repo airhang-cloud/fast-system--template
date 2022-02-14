@@ -14,11 +14,6 @@ import { reactive } from "@vue/reactivity";
 
 let lineData = reactive([
     {
-        label: "常用技术库分享",
-        href: "https://airhang.ltd",
-        icon: "icon-link",
-    },
-    {
         label: "Github地址",
         href: "https://github.com/airhang-cloud/fast-system--template",
         icon: "icon-github",
@@ -27,6 +22,11 @@ let lineData = reactive([
         label: "Gitee地址",
         href: "https://gitee.com/huang_min_hang/fast-system-template",
         icon: "icon-github",
+    },
+    {
+        label: "常用技术库分享(该网站访问加载较慢,后续优化,请见谅)",
+        href: "https://airhang.ltd",
+        icon: "icon-link",
     },
     {
         label: "CSDN",

@@ -3,7 +3,8 @@
         <!--菜单-->
         <a-layout-sider hide-trigger collapsible :collapsed="collapsed">
             <div class="logo">
-                <img class="iconSty" src="@/assets/float1.png" alt="" />
+                <img v-if="!collapsed" class="iconSty" src="@/assets/float1.png" alt="" />
+                <img v-else class="navIcon" src="@/assets/Logo.png" alt="" />
             </div>
             <!--导航菜单-->
             <Nav v-for="el in routes[0].children" :key="el" :item="el" :select-arr="targetArr" @selectNode="onClickMenuItem" />
@@ -95,11 +96,11 @@ export default defineComponent({
 .layout-demo :deep(.arco-layout-sider) .logo {
     height: 60px;
     margin: 2px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255);
 }
 
 .layout-demo :deep(.arco-layout-sider-light) .logo {
-    background: var(--color-fill-2);
+    background: rgba(255, 255, 255);
 }
 
 .layout-demo :deep(.arco-layout-header) {
@@ -152,10 +153,14 @@ export default defineComponent({
     background-color: #fff;
 }
 
-.iconSty {
+.iconSty,
+.navIcon {
     display: inline-block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.navIcon {
+    object-fit: contain;
 }
 </style>
