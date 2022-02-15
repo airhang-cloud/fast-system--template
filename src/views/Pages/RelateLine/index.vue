@@ -6,11 +6,15 @@
                 <a :href="el.href" target="blank">{{ el.label }}</a>
             </a-typography-title>
         </a-typography>
+        <a-divider class="top-16" orientation="left">
+            <h3><icon-lark-color /> 快捷扫码区</h3>
+        </a-divider>
+        <a-image width="200" title="扫码关注公众号" description="每天9.30为你提供早读文章" footerPosition="outer" style="margin-left: 67px; vertical-align: top" :src="img" />
     </container-box>
 </template>
 
 <script setup>
-import { reactive } from "@vue/reactivity";
+import { reactive, ref } from "@vue/reactivity";
 
 let lineData = reactive([
     {
@@ -46,6 +50,7 @@ let lineData = reactive([
         icon: "icon-wechat",
     },
 ]);
+let img = ref(require("@/assets/qrcode/gzh.jpg"));
 </script>
 
 <style scoped>
