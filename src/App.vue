@@ -16,7 +16,7 @@
 
 .default-box {
     width: 100%;
-    height: 99vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -24,10 +24,10 @@
     // background-color: #bdbdbd;
 }
 
-.default-box img {
-    display: inline-block;
-    width: 700px;
-    height: auto;
+.default-box {
+    background: url("assets/bac.png") no-repeat;
+    background-size: 100%;
+    background-color: #0048cd;
 }
 
 .arco-input-wrapper {

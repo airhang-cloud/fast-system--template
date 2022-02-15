@@ -1,6 +1,6 @@
 <template>
     <div class="default-box">
-        <img class="bac-img animate__animated animate__pulse" src="@/assets/bac.png" alt="" />
+        <!-- <img class="bac-img animate__animated animate__pulse" src="@/assets/bac.png" alt="" /> -->
         <a-form ref="loginForm" :model="form" class="login-box animate__animated animate__bounceIn" @submit="handleSubmit" auto-label-width>
             <h1 style="text-align: center">EZ-Admin</h1>
             <p class="tips">The simpler the better</p>
@@ -11,8 +11,8 @@
                 <a-input-password v-model="form.psw" placeholder="密码输入..." />
             </a-form-item>
             <a-form-item>
-                <a-button html-type="submit" type="primary" size="large">登录</a-button>
-                <a-button @click="$refs.loginForm.resetFields()" size="large">重置</a-button>
+                <a-button html-type="submit" type="primary" size="large" long>登录</a-button>
+                <a-button @click="$refs.loginForm.resetFields()" size="large" long>重置</a-button>
             </a-form-item>
         </a-form>
     </div>
@@ -66,8 +66,9 @@ export default {
     max-width: 400px;
     box-sizing: border-box;
     padding: 80px 30px;
-    box-shadow: 0 0 6px #e0e0e0;
+    /* box-shadow: 0 0 6px #e0e0e0; */
     border-radius: 9px;
+    background-color: #fff;
 }
 
 .tips {
