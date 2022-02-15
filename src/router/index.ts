@@ -151,7 +151,7 @@ export const routes: Array<RouteRecordRaw> = [
         meta: {
             title: "建议",
         },
-        component: () => import(/* webpackChunkName: "Result" */ "../views/Pages/Result/Tips/index.js"),
+        component: () => import(/* webpackChunkName: "Result" */ "../views/Pages/Result/Tips/index.vue"),
     },
     {
         path: "/500",

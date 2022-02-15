@@ -65,3 +65,21 @@ export function checkPCMobile(cb: any) {
         cb({ isPc: true });
     }
 }
+
+/**
+ * @description: 获取url参数,特别处理,代码较粗糙,插眼优化
+ * */
+
+export function getQueryString(name: string, search: string, success: any, fail: any) {
+    search = search || window.location.search.substr(1) || window.location.hash.split("?")[1];
+    let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    try {
+        let r = search.match(reg);
+        let val;
+        if (r != null) val = unescape(r[2]);
+        else val = null;
+        success(val);
+    } catch (error) {
+        fail({ type: "error", msg: "参数错误" });
+    }
+}

@@ -19,15 +19,6 @@
         },
         "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
     },
-    "include": [
-        "src/**/*.ts",
-        "src/**/*.tsx",
-        "src/**/*.vue",
-        "tests/**/*.ts",
-        "tests/**/*.tsx",
-        "src/views/Pages/Result/Tips/index.js",
-        "src/components/G2Template/BarGenerate.js",
-        "src/components/G2Template/SankeyGenerate.js"
-    ],
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
     "exclude": ["node_modules"]
 }

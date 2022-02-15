@@ -1,3 +1,4 @@
+<script lang="ts">
 import template from "@/views/Pages/Result/Template/index.vue";
 import "../style/tips.css";
 
@@ -10,3 +11,4 @@ export default {
         };
     },
 };
+</script>
