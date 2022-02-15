@@ -1,6 +1,7 @@
 {
   "name": "easy-admin",
-  "version": "0.1.0",
+  "version": "0.1.6",
+  "author": "airhang",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
