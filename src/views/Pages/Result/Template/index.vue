@@ -1,7 +1,7 @@
 <template>
     <div id="main">
         <div className="fof">
-            <h1>{{ state }}</h1>
+            <h1 class="msgSty">{{ state }}</h1>
         </div>
     </div>
 </template>

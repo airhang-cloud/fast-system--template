@@ -146,6 +146,14 @@ export const routes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "Result" */ "../views/Pages/Result/404/index.vue"),
     },
     {
+        path: "/tips",
+        name: "Tips",
+        meta: {
+            title: "建议",
+        },
+        component: () => import(/* webpackChunkName: "Result" */ "../views/Pages/Result/Tips/index.js"),
+    },
+    {
         path: "/500",
         name: "500",
         meta: {

@@ -54,3 +54,14 @@ export function clearConfig() {
     localStorage.clear();
     sessionStorage.clear();
 }
+
+/**
+ * @description: 移动端/PC端
+ * */
+export function checkPCMobile(cb: any) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        cb({ isPc: false });
+    } else {
+        cb({ isPc: true });
+    }
+}

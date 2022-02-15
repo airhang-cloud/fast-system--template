@@ -1,0 +1,6 @@
+/* 字体调整 */
+.msgSty {
+    width: 60%;
+    word-break: break-all;
+    font-size: 16px !important;
+}

@@ -36,7 +36,8 @@ import Nav from "./Layout/Nav";
 import HeaderTool from "./Layout/HeaderTool/index";
 import { defineComponent, ref } from "vue";
 import { useStore } from "vuex";
-import { setCurSelect, getCurSelect, getCurUser, getCurIdentity } from "@/utils";
+// eslint-disable-next-line no-unused-vars
+import { setCurSelect, getCurSelect, getCurUser, getCurIdentity, checkPCMobile } from "@/utils";
 import { onResize } from "@/utils/resize";
 import { IconCaretRight, IconCaretLeft } from "@arco-design/web-vue/es/icon";
 
