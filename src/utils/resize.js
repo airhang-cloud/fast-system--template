@@ -27,5 +27,5 @@ export function onResize(cb) {
             }
         }),
             cb({ type: "resize", width: winWidth });
-    }, 500);
+    }, 100);
 }
