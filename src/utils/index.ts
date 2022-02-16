@@ -55,6 +55,11 @@ export function clearConfig() {
     sessionStorage.clear();
 }
 
+export function curSysteType(type: string, flag: boolean) {
+    if (type === "set") sessionStorage.setItem("isPc", JSON.stringify(flag));
+    else if (type === "get") return sessionStorage.getItem("isPc");
+}
+
 /**
  * @description: 移动端/PC端
  * */
