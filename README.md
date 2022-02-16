@@ -59,7 +59,7 @@
 
 #### ⚡️ 登录界面
 
-![img](https://img.airhang.ltd/ez-admin-login.jpg)
+![img](https://img.airhang.ltd/admin.png)
 
 #### ⚡️ 进入主体界面
 
