@@ -63,7 +63,7 @@
 
 #### ⚡️ 进入主体界面
 
-![img](https://img.airhang.ltd/main.jpg)
+![img](https://img.airhang.ltd/main1.png)
 
 ### 项目属于简单入门水平，欢迎提出问题，为后续更好的输出做准备，如果小伙伴们觉得对你有很大帮助可以点个 `star` 哟
 
