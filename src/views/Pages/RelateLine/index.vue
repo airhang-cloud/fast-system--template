@@ -43,6 +43,11 @@ let lineData = reactive([
         icon: "icon-live-broadcast",
     },
     {
+        label: "ArcoDesign",
+        href: "https://arco.design/vue/docs/start",
+        icon: "icon-link",
+    },
+    {
         label: "公众号在线",
         // eslint-disable-next-line prettier/prettier
         href:
