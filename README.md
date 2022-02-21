@@ -70,7 +70,7 @@
 ## ⚡️ 更多信息
 
 -   关注微信公众号“部落单元阁”可以获取更多技术宝典
--   [常用技术知识链接库](https://airhang.ltd/)
+-   [常用技术知识链接库(访问较慢的问题正在优化)](https://airhang.ltd/)
 
 ## ⚡️ 友情链接
 
@@ -79,6 +79,10 @@
 -   [Antv--G2](https://g2.antv.vision/zh/examples/case/dynamic/#dynamic-bar)
 -   [arco.design](https://arco.design/)
 -   [biblbili-会飞长腿](https://www.bilibili.com/video/BV1VF411n7X6?spm_id_from=333.1007.top_right_bar_window_history.content.click)
+
+## ⚡️ 生活记录
+
+-   [在线抽签小工具](https://www.bilibili.com/video/BV11m4y197Wt?spm_id_from=333.999.0.0)
 
 ## 👩‍💻 项目会持续更新
 
