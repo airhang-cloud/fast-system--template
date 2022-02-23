@@ -89,6 +89,7 @@
 ## ⚡️ 生活记录
 
 -   [在线抽签小工具](https://www.bilibili.com/video/BV11m4y197Wt?spm_id_from=333.999.0.0)
+-   [程序员日常如何维护自己](https://github.com/airhang-cloud/GOODLUCKY)
 
 ## 👩‍💻 项目会持续更新
 
