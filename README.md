@@ -15,6 +15,12 @@
 -   [项目文档库整合中](https://airhang-cloud.github.io/fast-template-docs/)
 -   此项目仓库仅存放前端代码，后端服务迁移到 [ez-server](https://github.com/airhang-cloud/nestjs-template-mock)
 
+## 项目存在问题
+
+-   移动端未做 自适应 适配
+-   IOS 端的兼容问题
+-   界面暂未提供 缓存策略
+
 ## ⚡️ 技术
 
 | Technology  | 描述                                                                       |
