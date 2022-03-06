@@ -90,8 +90,13 @@
 
 -   [在线抽签小工具](https://www.bilibili.com/video/BV11m4y197Wt?spm_id_from=333.999.0.0)
 -   [程序员日常如何维护自己](https://github.com/airhang-cloud/GOODLUCKY)
+-   [sprite-tpl 快速搭建个人博客开源脚手架，设计中]
 
 ## 👩‍💻 项目会持续更新
+
+## 扫码可关注公众号
+
+[img](https://img.airhang.ltd/qrcode_for_gh_828926fd8e2d_258.jpg)
 
 ## License
 
