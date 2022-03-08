@@ -1,6 +1,6 @@
 <template>
     <container-box title="词云图" subtitle="">
-        <div id="container9"></div>
+        <div id="container9" class="cloudBox animate__animated animate__fadeIn animate__faster animate__zoomIn"></div>
     </container-box>
 </template>
 
@@ -532,4 +532,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.cloudBox {
+    width: 70%;
+    height: 45%;
+    margin: 0 auto;
+}
+</style>
