@@ -16,6 +16,16 @@ export const relateRoute: Route = {
             component: () => import(/* webpackChunkName: "ModuleRelate" */ "@/views/Pages/RelateLine/index.vue"),
         },
         {
+            path: "/cloud",
+            name: "Cloud",
+            meta: {
+                title: "词语图",
+                icon: "icon-link",
+                identity: ["admin", "user1"],
+            },
+            component: () => import(/* webpackChunkName: "ModuleRelate" */ "@/views/Pages/CloudPage/index.vue"),
+        },
+        {
             path: "/threedemo",
             name: "ThreeDemo",
             meta: {
