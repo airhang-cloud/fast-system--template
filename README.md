@@ -88,6 +88,8 @@
 
 ## ⚡️ 生活记录
 
+![img](https://img.airhang.ltd/75066cf0ec4927ba35af3df8f07c919.jpg)
+
 -   [在线抽签小工具](https://www.bilibili.com/video/BV11m4y197Wt?spm_id_from=333.999.0.0)
 -   [程序员日常如何维护自己](https://github.com/airhang-cloud/GOODLUCKY)
 -   sprite-tpl 快速搭建个人博客开源脚手架，设计中
@@ -98,6 +100,9 @@
 
 ![img](https://img.airhang.ltd/qrcode_for_gh_828926fd8e2d_258.jpg)
 
+## 扫码加群一起学习交流
+
+![img](https://img.airhang.ltd/ecdcd0614f4d5a29a9d723437257528.jpg)
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
