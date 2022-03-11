@@ -526,7 +526,6 @@ export default {
                 },
             },
         });
-
         wordCloud.render();
     },
 };

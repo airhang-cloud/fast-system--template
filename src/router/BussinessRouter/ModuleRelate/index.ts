@@ -26,6 +26,16 @@ export const relateRoute: Route = {
             component: () => import(/* webpackChunkName: "ModuleRelate" */ "@/views/Pages/CloudPage/index.vue"),
         },
         {
+            path: "/parallax",
+            name: "Parallax",
+            meta: {
+                title: "视觉滚动",
+                icon: "icon-link",
+                identity: ["admin", "user1"],
+            },
+            component: () => import(/* webpackChunkName: "ModuleRelate" */ "@/views/Pages/Parallax/index.vue"),
+        },
+        {
             path: "/threedemo",
             name: "ThreeDemo",
             meta: {
