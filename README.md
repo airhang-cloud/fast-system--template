@@ -100,9 +100,6 @@
 
 ![img](https://img.airhang.ltd/qrcode_for_gh_828926fd8e2d_258.jpg)
 
-## 扫码加群一起学习交流
-
-![img](https://img.airhang.ltd/ecdcd0614f4d5a29a9d723437257528.jpg)
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
